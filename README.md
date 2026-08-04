@@ -1,3 +1,5 @@
+<!-- GitHub profile README -->
+
 <div align="center">
   <img src="assets/profile-banner.png" alt="Rajendar Muddasani, AI and ML architecture for post-silicon engineering" width="100%">
 </div>
