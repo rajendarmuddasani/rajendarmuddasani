@@ -38,6 +38,25 @@ A reproducible six-class XGBoost system over 25 synthetic die-level parameters, 
 
 The public data is synthetic and the v4 benchmark reuses the historical holdout. The stated 20-30% test-time reduction is an unmet target; the current strict safety policy measured 0.00% reduction. A new grouped and time-based confirmation set is the promotion gate.
 
+### [NLP Root Cause Predictor](https://github.com/rajendarmuddasani/NLP_Root_Cause_Predictor)
+
+[![CI](https://github.com/rajendarmuddasani/NLP_Root_Cause_Predictor/actions/workflows/ci.yml/badge.svg)](https://github.com/rajendarmuddasani/NLP_Root_Cause_Predictor/actions/workflows/ci.yml)
+![Python](https://img.shields.io/badge/Python-3.11%20%7C%203.12-3776AB?style=flat-square&logo=python&logoColor=white)
+![Model](https://img.shields.io/badge/Model-Calibrated%20word%2Fchar%20SVM-17222B?style=flat-square)
+![Data](https://img.shields.io/badge/Data-20K%20independent%20synthetic-F3C969?style=flat-square&labelColor=17222B)
+
+A ten-class short multilingual failure-text triage system with a 20:1 long tail, validation-only model/policy selection, hash-verified serving, abstention, OOD handling, reviewer feedback, metrics, drift gates, and non-root containers.
+
+| Evidence | Reproduced result |
+|---|---:|
+| Forced future/group holdout accuracy | 73.17% |
+| Forced macro F1 | 0.6650 |
+| Policy coverage | 73.17% |
+| Accepted accuracy / macro F1 | 88.75% / 0.8385 |
+| OOD safe handling | 97.50% |
+
+The 20,000-report corpus is independently generated synthetic text with five-word median length, English/German/mixed/code styles, duplicates, annotation conflicts, and zero incident/template overlap. The implementation is deployment-ready; real-domain model approval and measured reviewer outcomes remain future gates.
+
 ## Portfolio
 
 The order below is the reproducibility-audit sequence, from the smallest evidence gap to the largest. Private entries are listed without inaccessible links.
@@ -45,7 +64,7 @@ The order below is the reproducibility-audit sequence, from the smallest evidenc
 | # | System | Engineering focus | Access and evidence state |
 |---:|---|---|---|
 | 1 | [Post-Silicon Bin Detection MLOps](https://github.com/rajendarmuddasani/post-silicon-bin-detection-mlops) | Six-bin XGBoost, FastAPI, Streamlit, model lineage, safety policy | **Public**; locally reproduced evidence |
-| 2 | [NLP Root Cause Predictor](https://github.com/rajendarmuddasani/NLP_Root_Cause_Predictor) | DeBERTa-v3 and SciBERT stacking, TF-IDF baseline, SHAP | **Public**; measured artifacts; safe-data rerun queued |
+| 2 | [NLP Root Cause Predictor](https://github.com/rajendarmuddasani/NLP_Root_Cause_Predictor) | Ten-class short multilingual triage, selective policy, production reference | **Public**; locally reproduced synthetic evidence; real-domain approval pending |
 | 3 | **RL Test Flow Optimization** | Gymnasium test environment, DQN policy, cost-aware selection | **Private**; measured synthetic simulation |
 | 4 | [ResNet STDF Wafer Map Defect Classifier](https://github.com/rajendarmuddasani/Transfer_Learning_ResNet_STDF_Wafer_Map_Yield_Predictor) | STDF pipeline, ResNet-18, eight-pattern classification, API and React | **Public**; reported metric under reproduction |
 | 5 | [Chip-Level Test Time Optimizer](https://github.com/rajendarmuddasani/Chip_Level_Test_Time_Optimizer) | Neural classifier, VAE anomaly detection, sigma rules, conservative OR gate | **Public**; architecture and component-test evidence |
