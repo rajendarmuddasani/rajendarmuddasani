@@ -8,7 +8,7 @@
   <a href="https://www.linkedin.com/in/rajendar-muddasani-8a177620"><img src="https://img.shields.io/badge/LinkedIn-Connect-0A66C2?style=flat-square&logo=linkedin&logoColor=white" alt="LinkedIn"></a>
   <a href="mailto:rajendar.mi46@gmail.com"><img src="https://img.shields.io/badge/Email-Contact-D95D39?style=flat-square&logo=gmail&logoColor=white" alt="Email"></a>
   <img src="https://img.shields.io/badge/Portfolio-13_systems-087F78?style=flat-square" alt="13 portfolio systems">
-  <img src="https://img.shields.io/badge/Public_repositories-8-163253?style=flat-square" alt="8 public repositories">
+  <img src="https://img.shields.io/badge/Public_repositories-9-163253?style=flat-square" alt="9 public repositories">
 </div>
 
 ## About
@@ -57,6 +57,26 @@ A ten-class short multilingual failure-text triage system with a 20:1 long tail,
 
 The 20,000-report corpus is independently generated synthetic text with five-word median length, English/German/mixed/code styles, duplicates, annotation conflicts, and zero incident/template overlap. The implementation is deployment-ready; real-domain model approval and measured reviewer outcomes remain future gates.
 
+### [RL Test Flow Optimization](https://github.com/rajendarmuddasani/rl-test-flow-optimization)
+
+[![CI](https://github.com/rajendarmuddasani/rl-test-flow-optimization/actions/workflows/ci.yml/badge.svg)](https://github.com/rajendarmuddasani/rl-test-flow-optimization/actions/workflows/ci.yml)
+![Python](https://img.shields.io/badge/Python-3.10%20%7C%203.11%20%7C%203.12-3776AB?style=flat-square&logo=python&logoColor=white)
+![Policy](https://img.shields.io/badge/Champion-Bayesian%20risk%20policy-163253?style=flat-square)
+![Data](https://img.shields.io/badge/Data-15K%20synthetic%20confirmation-F3C969?style=flat-square&labelColor=17222B)
+
+A safety-gated synthetic test-flow control system with enforced cost/time budgets, test-specific sensitivity and false-fail risk, Bayesian defect evidence, robust multi-catalog selection, three-seed RL rejection, and a hash-verified stepwise API.
+
+| Confirmation evidence | Reproduced result |
+|---|---:|
+| Episodes / unseen catalogs | 15,000 / 3 |
+| Accuracy / defect recall | 96.58% / 96.46% |
+| Defect escape / false-fail rate | 3.54% / 3.15% |
+| Budget-relative mean-time headroom | 51.30% |
+| Time vs cost-efficient baseline | 41.49% lower at 3.55x mean cost |
+| Experimental MaskablePPO | Rejected; 82.72% three-seed mean recall |
+
+All quality and resource evidence is independently generated simulation. The time result is not measured production ATE savings; the confirmed policy costs more than the low-cost baseline, and real test dependencies, retest rules, and silicon validation remain future gates.
+
 ## Portfolio
 
 The order below is the reproducibility-audit sequence, from the smallest evidence gap to the largest. Private entries are listed without inaccessible links.
@@ -65,7 +85,7 @@ The order below is the reproducibility-audit sequence, from the smallest evidenc
 |---:|---|---|---|
 | 1 | [Post-Silicon Bin Detection MLOps](https://github.com/rajendarmuddasani/post-silicon-bin-detection-mlops) | Six-bin XGBoost, FastAPI, Streamlit, model lineage, safety policy | **Public**; locally reproduced evidence |
 | 2 | [NLP Root Cause Predictor](https://github.com/rajendarmuddasani/NLP_Root_Cause_Predictor) | Ten-class short multilingual triage, selective policy, production reference | **Public**; locally reproduced synthetic evidence; real-domain approval pending |
-| 3 | **RL Test Flow Optimization** | Gymnasium test environment, DQN policy, cost-aware selection | **Private**; measured synthetic simulation |
+| 3 | [RL Test Flow Optimization](https://github.com/rajendarmuddasani/rl-test-flow-optimization) | Bayesian evidence, robust policy, rejected RL challenger, stepwise API | **Public**; confirmed synthetic evidence; real-domain validation pending |
 | 4 | [ResNet STDF Wafer Map Defect Classifier](https://github.com/rajendarmuddasani/Transfer_Learning_ResNet_STDF_Wafer_Map_Yield_Predictor) | STDF pipeline, ResNet-18, eight-pattern classification, API and React | **Public**; reported metric under reproduction |
 | 5 | [Chip-Level Test Time Optimizer](https://github.com/rajendarmuddasani/Chip_Level_Test_Time_Optimizer) | Neural classifier, VAE anomaly detection, sigma rules, conservative OR gate | **Public**; architecture and component-test evidence |
 | 6 | **Post-Silicon Validation RAG** | Multi-format ingestion, ChromaDB, local/cloud LLM modes, citations | **Private**; retrieval benchmark queued |
