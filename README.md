@@ -1,121 +1,72 @@
 <!-- GitHub profile README -->
 
 <div align="center">
-  <img src="assets/profile-banner.png" alt="Rajendar Muddasani, AI and ML architecture for post-silicon engineering" width="100%">
+  <img src="assets/profile-banner.png" alt="Rajendar Muddasani, AI and ML Architect for post-silicon engineering" width="100%">
 </div>
 
 <div align="center">
   <a href="https://www.linkedin.com/in/rajendar-muddasani-8a177620"><img src="https://img.shields.io/badge/LinkedIn-Connect-0A66C2?style=flat-square&logo=linkedin&logoColor=white" alt="LinkedIn"></a>
   <a href="mailto:rajendar.mi46@gmail.com"><img src="https://img.shields.io/badge/Email-Contact-D95D39?style=flat-square&logo=gmail&logoColor=white" alt="Email"></a>
-  <img src="https://img.shields.io/badge/Portfolio-13_systems-087F78?style=flat-square" alt="13 portfolio systems">
-  <img src="https://img.shields.io/badge/Public_repositories-9-163253?style=flat-square" alt="9 public repositories">
+  <img src="https://img.shields.io/badge/Role-AI%2FML_Architect-6CB4AD?style=flat-square&labelColor=163253" alt="AI and ML Architect">
+  <img src="https://img.shields.io/badge/Portfolio-13_systems-F3C969?style=flat-square&labelColor=163253" alt="13 portfolio systems">
+  <img src="https://img.shields.io/badge/Public_repositories-9-4EA5D9?style=flat-square&labelColor=163253" alt="9 public repositories">
+</div>
+
+<div align="center">
+  <img src="https://img.shields.io/badge/ML-Predictive_systems-F3C969?style=for-the-badge&labelColor=17222B" alt="Machine learning">
+  <img src="https://img.shields.io/badge/DL-Spatial_intelligence-E56B46?style=for-the-badge&labelColor=17222B" alt="Deep learning">
+  <img src="https://img.shields.io/badge/GenAI-Grounded_knowledge-4EA5D9?style=for-the-badge&labelColor=17222B" alt="Generative AI">
+  <img src="https://img.shields.io/badge/Agentic_AI-Governed_workflows-9B8AFB?style=for-the-badge&labelColor=17222B" alt="Agentic AI">
 </div>
 
 ## About
 
-I am a Senior Staff Engineer and AI/ML lead working at the intersection of semiconductor test engineering, predictive ML, GenAI, and governed agentic systems. I design workflows that connect silicon and test data to reproducible models, engineering decisions, and human-review gates.
+I am a **Senior Staff Engineer and AI/ML Architect** with 16+ years in semiconductor test engineering. I design systems that connect silicon, test, text, and engineering data to predictive models, grounded knowledge, governed agents, and human-review decisions.
 
-This profile is an **evidence-first portfolio**. Public repositories use synthetic or licensed public data, distinguish measured results from targets, and expose limitations alongside architecture. Confidential company code, data, identifiers, and integration details are not published.
+This is an **evidence-first portfolio**. Public repositories use independently generated synthetic or licensed public data, bind displayed numbers to reproducible artifacts, and show limitations beside results. Confidential company code, data, identifiers, and integration details are not published.
 
-## Featured evidence
+## Evidence portfolio
 
-### [Post-Silicon Bin Detection MLOps](https://github.com/rajendarmuddasani/post-silicon-bin-detection-mlops)
+The projects are ordered by the portfolio audit sequence. The **Numbers** column contains accepted evidence only; targets and architecture-only states are labelled explicitly.
 
-[![CI](https://github.com/rajendarmuddasani/post-silicon-bin-detection-mlops/actions/workflows/ci.yml/badge.svg)](https://github.com/rajendarmuddasani/post-silicon-bin-detection-mlops/actions/workflows/ci.yml)
-![Python](https://img.shields.io/badge/Python-3.10%2B-3776AB?style=flat-square&logo=python&logoColor=white)
-![XGBoost](https://img.shields.io/badge/Model-XGBoost_v4-17222B?style=flat-square)
-![Data](https://img.shields.io/badge/Data-Synthetic-F3C969?style=flat-square&labelColor=17222B)
+| # | System | Lane | Numbers | Delivery and evidence boundary |
+|---:|---|---|---|---|
+| **01** | [**Post-Silicon Bin Detection MLOps**](https://github.com/rajendarmuddasani/post-silicon-bin-detection-mlops)<br>[![CI](https://github.com/rajendarmuddasani/post-silicon-bin-detection-mlops/actions/workflows/ci.yml/badge.svg)](https://github.com/rajendarmuddasani/post-silicon-bin-detection-mlops/actions/workflows/ci.yml) | ![ML](https://img.shields.io/badge/ML-F3C969?style=flat-square&labelColor=17222B) | **15,000** synthetic dies, **25** features, **6** bins<br>Accuracy **0.8303**, macro F1 **0.5352**, ECE **0.0179** | XGBoost v4, FastAPI, Streamlit, model/schema hashing, Docker. The 20-30% test-time reduction remains a target; the strict measured policy is **0.00%**. |
+| **02** | [**NLP Root Cause Predictor**](https://github.com/rajendarmuddasani/NLP_Root_Cause_Predictor)<br>[![CI](https://github.com/rajendarmuddasani/NLP_Root_Cause_Predictor/actions/workflows/ci.yml/badge.svg)](https://github.com/rajendarmuddasani/NLP_Root_Cause_Predictor/actions/workflows/ci.yml) | ![ML](https://img.shields.io/badge/ML-F3C969?style=flat-square&labelColor=17222B) | **20,000** independent synthetic reports, **10** classes<br>Accepted accuracy **88.75%** at **73.17%** coverage; OOD safe handling **97.50%** | Calibrated word/character SVM, abstention, OOD routing, feedback, drift gates, API, and containers. Real-domain approval remains pending. |
+| **03** | [**RL Test Flow Optimization**](https://github.com/rajendarmuddasani/rl-test-flow-optimization)<br>[![CI](https://github.com/rajendarmuddasani/rl-test-flow-optimization/actions/workflows/ci.yml/badge.svg)](https://github.com/rajendarmuddasani/rl-test-flow-optimization/actions/workflows/ci.yml) | ![ML](https://img.shields.io/badge/ML-F3C969?style=flat-square&labelColor=17222B) | **15,000** simulated confirmation episodes<br>Defect recall **96.46%**, escapes **3.54%**, time headroom **51.30%** | Bayesian risk policy, bounded API, evidence dashboard, Docker. Experimental MaskablePPO was rejected at **82.72%** mean recall; time is simulated, not production ATE savings. |
+| **04** | [**ResNet Wafer Pattern Classifier**](https://github.com/rajendarmuddasani/Transfer_Learning_ResNet_STDF_Wafer_Map_Yield_Predictor)<br>[![CI](https://github.com/rajendarmuddasani/Transfer_Learning_ResNet_STDF_Wafer_Map_Yield_Predictor/actions/workflows/ci.yml/badge.svg)](https://github.com/rajendarmuddasani/Transfer_Learning_ResNet_STDF_Wafer_Map_Yield_Predictor/actions/workflows/ci.yml) | ![DL](https://img.shields.io/badge/DL-E56B46?style=flat-square&labelColor=17222B) | **1,920 / 480 / 800** train/validation/confirmation images<br>Accuracy **93.63%**, macro F1 **0.9361**, MCC **0.9273**, minimum recall **83.0%** | Group-isolated synthetic families, ResNet-18, calibrated ONNX, FastAPI, React, Streamlit, non-root Docker. No WM-811K, STDF, yield, or production-silicon claim. |
+| **05** | [**Chip-Level Test Time Optimizer**](https://github.com/rajendarmuddasani/Chip_Level_Test_Time_Optimizer) | ![DL](https://img.shields.io/badge/DL-E56B46?style=flat-square&labelColor=17222B) | **No accepted end-to-end benchmark yet**<br>15% reduction and zero escapees remain targets | Neural classifier, VAE anomaly detection, sigma rules, and conservative OR gate have architecture/component evidence. Constrained simulation is the next gate. |
+| **06** | **Post-Silicon Validation RAG** | ![GenAI](https://img.shields.io/badge/GenAI-4EA5D9?style=flat-square&labelColor=17222B) | **Benchmark queued** | Private multi-format ingestion, ChromaDB, local/cloud LLM modes, and citations. Retrieval, groundedness, citation, safety, latency, and cost evidence are still required. |
+| **07** | [**AARCAR Multi-Agent RCA Platform**](https://github.com/rajendarmuddasani/AARCAR-Multi-Agent-RCA-Platform) | ![Agentic AI](https://img.shields.io/badge/Agentic_AI-9B8AFB?style=flat-square&labelColor=17222B) | **Architecture and orchestration evidence**<br>No accepted RCA quality benchmark yet | Three-agent LangGraph RCA with graph analysis and semantic retrieval. Service fallbacks are disclosed; grounded RCA evaluation is the next gate. |
+| **08** | [**LangGraph Multi-Agent Test Failure RCA**](https://github.com/rajendarmuddasani/LangGraph-Multi-Agent-Test-Failure-RCA-Platform) | ![Agentic AI](https://img.shields.io/badge/Agentic_AI-9B8AFB?style=flat-square&labelColor=17222B) | **Architecture and demo evidence**<br>No accepted end-to-end benchmark yet | Six-agent statistical, spatial, correlation, hypothesis, and report workflow. Real retrieval, persistence, and expert-labelled evaluation remain open. |
+| **09** | [**Enterprise ML Data Pipeline**](https://github.com/rajendarmuddasani/Enterprise_ML_Data_Pipeline) | ![ML](https://img.shields.io/badge/ML-F3C969?style=flat-square&labelColor=17222B) | **Latency artifact only**<br>1,000 STDF files/day remains a target | Kafka, PySpark, Delta Lake, MLflow, Airflow, and FastAPI architecture. Safe parsing, controlled throughput, resource, lineage, and recovery evidence are required. |
+| **10** | [**GraphDB GenAI MCP Test Program Development**](https://github.com/rajendarmuddasani/GraphDB_GenAI_MCP_Test_Program_Development) | ![GenAI](https://img.shields.io/badge/GenAI-4EA5D9?style=flat-square&labelColor=17222B) | **Tested starter**<br>End-to-end generation quality not yet measured | Neo4j discovery and project preflight exist. Executable MCP generation, validation fixtures, security controls, and task-quality metrics remain open. |
+| **11** | **DRAM Yield Predictor MLOps** | ![DL](https://img.shields.io/badge/DL-E56B46?style=flat-square&labelColor=17222B) | **Large synthetic simulation; audit pending** | Private rare-defect Transformer-CNN with drift, canary, retraining, and rollback simulation. Metric and artifact validation plus resume-inclusion decision are required. |
+| **12** | **Domain-Specific LLM Fine-Tuning Platform** | ![GenAI](https://img.shields.io/badge/GenAI-4EA5D9?style=flat-square&labelColor=17222B) | **Architecture evidence; benchmark pending** | Private LoRA/QLoRA, retrieval, evaluation APIs, and governed serving design. Public data/model selection and executed quality/safety/cost evidence remain open. |
+| **13** | **ResNet U-Net Wafer Map Defect Segmenter** | ![DL](https://img.shields.io/badge/DL-E56B46?style=flat-square&labelColor=17222B) | **No implementation or benchmark** | Private empty repository reserved for a distinct pixel-level segmentation project. Build-versus-archive decision is required before presentation. |
 
-A reproducible six-class XGBoost system over 25 synthetic die-level parameters, with model and schema hashing, FastAPI inference, a Streamlit evidence dashboard, calibration analysis, per-class failure analysis, and safety-aware early-exit evaluation.
-
-| Evidence | Reproduced result |
-|---|---:|
-| Reused 3,000-row benchmark accuracy | 0.8303 |
-| Weighted F1 | 0.8140 |
-| Macro F1 | 0.5352 |
-| Balanced accuracy | 0.4945 |
-| Top-label expected calibration error | 0.0179 |
-
-The public data is synthetic and the v4 benchmark reuses the historical holdout. The stated 20-30% test-time reduction is an unmet target; the current strict safety policy measured 0.00% reduction. A new grouped and time-based confirmation set is the promotion gate.
-
-### [NLP Root Cause Predictor](https://github.com/rajendarmuddasani/NLP_Root_Cause_Predictor)
-
-[![CI](https://github.com/rajendarmuddasani/NLP_Root_Cause_Predictor/actions/workflows/ci.yml/badge.svg)](https://github.com/rajendarmuddasani/NLP_Root_Cause_Predictor/actions/workflows/ci.yml)
-![Python](https://img.shields.io/badge/Python-3.11%20%7C%203.12-3776AB?style=flat-square&logo=python&logoColor=white)
-![Model](https://img.shields.io/badge/Model-Calibrated%20word%2Fchar%20SVM-17222B?style=flat-square)
-![Data](https://img.shields.io/badge/Data-20K%20independent%20synthetic-F3C969?style=flat-square&labelColor=17222B)
-
-A ten-class short multilingual failure-text triage system with a 20:1 long tail, validation-only model/policy selection, hash-verified serving, abstention, OOD handling, reviewer feedback, metrics, drift gates, and non-root containers.
-
-| Evidence | Reproduced result |
-|---|---:|
-| Forced future/group holdout accuracy | 73.17% |
-| Forced macro F1 | 0.6650 |
-| Policy coverage | 73.17% |
-| Accepted accuracy / macro F1 | 88.75% / 0.8385 |
-| OOD safe handling | 97.50% |
-
-The 20,000-report corpus is independently generated synthetic text with five-word median length, English/German/mixed/code styles, duplicates, annotation conflicts, and zero incident/template overlap. The implementation is deployment-ready; real-domain model approval and measured reviewer outcomes remain future gates.
-
-### [RL Test Flow Optimization](https://github.com/rajendarmuddasani/rl-test-flow-optimization)
-
-[![CI](https://github.com/rajendarmuddasani/rl-test-flow-optimization/actions/workflows/ci.yml/badge.svg)](https://github.com/rajendarmuddasani/rl-test-flow-optimization/actions/workflows/ci.yml)
-![Python](https://img.shields.io/badge/Python-3.10%20%7C%203.11%20%7C%203.12-3776AB?style=flat-square&logo=python&logoColor=white)
-![Policy](https://img.shields.io/badge/Champion-Bayesian%20risk%20policy-163253?style=flat-square)
-![Data](https://img.shields.io/badge/Data-15K%20synthetic%20confirmation-F3C969?style=flat-square&labelColor=17222B)
-
-A safety-gated synthetic test-flow control system with enforced cost/time budgets, test-specific sensitivity and false-fail risk, Bayesian defect evidence, robust multi-catalog selection, three-seed RL rejection, and a hash-verified stepwise API.
-
-| Confirmation evidence | Reproduced result |
-|---|---:|
-| Episodes / unseen catalogs | 15,000 / 3 |
-| Accuracy / defect recall | 96.58% / 96.46% |
-| Defect escape / false-fail rate | 3.54% / 3.15% |
-| Budget-relative mean-time headroom | 51.30% |
-| Time vs cost-efficient baseline | 41.49% lower at 3.55x mean cost |
-| Experimental MaskablePPO | Rejected; 82.72% three-seed mean recall |
-
-All quality and resource evidence is independently generated simulation. The time result is not measured production ATE savings; the confirmed policy costs more than the low-cost baseline, and real test dependencies, retest rules, and silicon validation remain future gates.
-
-## Portfolio
-
-The order below is the reproducibility-audit sequence, from the smallest evidence gap to the largest. Private entries are listed without inaccessible links.
-
-| # | System | Engineering focus | Access and evidence state |
-|---:|---|---|---|
-| 1 | [Post-Silicon Bin Detection MLOps](https://github.com/rajendarmuddasani/post-silicon-bin-detection-mlops) | Six-bin XGBoost, FastAPI, Streamlit, model lineage, safety policy | **Public**; locally reproduced evidence |
-| 2 | [NLP Root Cause Predictor](https://github.com/rajendarmuddasani/NLP_Root_Cause_Predictor) | Ten-class short multilingual triage, selective policy, production reference | **Public**; locally reproduced synthetic evidence; real-domain approval pending |
-| 3 | [RL Test Flow Optimization](https://github.com/rajendarmuddasani/rl-test-flow-optimization) | Bayesian evidence, robust policy, rejected RL challenger, stepwise API | **Public**; confirmed synthetic evidence; real-domain validation pending |
-| 4 | [ResNet STDF Wafer Map Defect Classifier](https://github.com/rajendarmuddasani/Transfer_Learning_ResNet_STDF_Wafer_Map_Yield_Predictor) | STDF pipeline, ResNet-18, eight-pattern classification, API and React | **Public**; reported metric under reproduction |
-| 5 | [Chip-Level Test Time Optimizer](https://github.com/rajendarmuddasani/Chip_Level_Test_Time_Optimizer) | Neural classifier, VAE anomaly detection, sigma rules, conservative OR gate | **Public**; architecture and component-test evidence |
-| 6 | **Post-Silicon Validation RAG** | Multi-format ingestion, ChromaDB, local/cloud LLM modes, citations | **Private**; retrieval benchmark queued |
-| 7 | [AARCAR Multi-Agent RCA Platform](https://github.com/rajendarmuddasani/AARCAR-Multi-Agent-RCA-Platform) | Three-agent LangGraph RCA, graph analysis, semantic retrieval | **Public**; orchestration evidence; service fallbacks disclosed |
-| 8 | [LangGraph Multi-Agent Test Failure RCA](https://github.com/rajendarmuddasani/LangGraph-Multi-Agent-Test-Failure-RCA-Platform) | Six-agent statistical, spatial, correlation, hypothesis, and report flow | **Public**; architecture and demo evidence |
-| 9 | [Enterprise ML Data Pipeline](https://github.com/rajendarmuddasani/Enterprise_ML_Data_Pipeline) | Kafka, PySpark, Delta Lake, MLflow, Airflow, FastAPI | **Public**; architecture and latency artifact; scale remains a target |
-| 10 | [GraphDB GenAI MCP Test Program Development](https://github.com/rajendarmuddasani/GraphDB_GenAI_MCP_Test_Program_Development) | Neo4j discovery, project preflight, MCP-oriented generation pattern | **Public**; tested starter; end-to-end generation pending |
-| 11 | **DRAM Yield Predictor MLOps** | Rare-defect Transformer-CNN, drift, canary, retraining, rollback simulation | **Private**; large synthetic simulation |
-| 12 | **Domain-Specific LLM Fine-Tuning Platform** | LoRA/QLoRA, retrieval, evaluation APIs, governed serving | **Private**; architecture evidence; benchmark pending |
-| 13 | **ResNet U-Net Wafer Map Defect Segmenter** | Reserved pixel-level wafer-defect segmentation concept | **Private and empty**; not presented as completed work |
-
-## System view
+## Architecture method
 
 ```mermaid
 flowchart LR
-    A[Silicon, STDF, text, and test assets] --> B[Data quality and provenance]
-    B --> C[Predictive ML, RAG, and agents]
+    A[Post-silicon question] --> B[Data and provenance]
+    B --> C[ML, DL, GenAI, or agents]
     C --> D[Evaluation and safety gates]
-    D --> E[FastAPI, workflows, and review UIs]
+    D --> E[APIs, workflows, and review UI]
     E --> F[Human decision and feedback]
     F --> B
+    style A fill:#f3c969,stroke:#17324d,color:#17324d
+    style B fill:#d9efe9,stroke:#18745a,color:#17324d
+    style C fill:#e56b46,stroke:#17324d,color:#ffffff
+    style D fill:#9b8afb,stroke:#17324d,color:#ffffff
+    style E fill:#4ea5d9,stroke:#17324d,color:#ffffff
+    style F fill:#6cb4ad,stroke:#17324d,color:#17324d
 ```
 
-## Engineering lens
-
-- **Evidence:** deterministic evaluation, immutable artifacts, data and model hashes, uncertainty, and explicit measured-versus-target language.
-- **Model quality:** class-level precision, recall, F1, calibration, imbalance-aware baselines, leakage controls, and shift sensitivity.
-- **Operational safety:** confidence routing, bounded-risk policies, human review, drift detection, retraining criteria, canary promotion, and rollback design.
-- **Platform architecture:** FastAPI, Docker, CI/CD, MLflow, Kafka, Spark, Delta Lake, Airflow, RAG, knowledge graphs, and MCP services.
-- **Semiconductor domain:** wafer sort and final test, STDF analytics, ATE workflows, yield, defect classification, and test-time optimization.
+- **Evidence:** deterministic evaluation, immutable artifacts, data/model hashes, uncertainty, and measured-versus-target language.
+- **Model quality:** leakage controls, class-level errors, imbalance-aware metrics, calibration, shift sensitivity, and rejected experiments.
+- **Operational safety:** confidence routing, bounded-risk policies, human review, drift gates, canary promotion, and rollback design.
+- **Platform architecture:** APIs, containers, CI/CD, event/data platforms, retrieval, knowledge graphs, and governed agent workflows.
 
 ## Technology
 
