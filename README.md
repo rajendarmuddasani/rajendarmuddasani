@@ -4,6 +4,14 @@
   <img src="assets/profile-banner.png" alt="Rajendar Muddasani, Post-Silicon Validation AI and ML Architect, selected skills, and real project evidence" width="100%">
 </div>
 
+<div align="center">
+  <a href="https://www.linkedin.com/in/rajendar-muddasani-8a177620"><img src="https://img.shields.io/badge/LinkedIn-Connect-0A66C2?style=flat-square&logo=linkedin&logoColor=white" alt="LinkedIn"></a>
+  <a href="mailto:rajendar.mi46@gmail.com"><img src="https://img.shields.io/badge/Gmail-Contact-D14836?style=flat-square&logo=gmail&logoColor=white" alt="Gmail"></a>
+  <img src="https://img.shields.io/badge/Role-Post--Silicon_AI%2FML_Architect-6CB4AD?style=flat-square&labelColor=163253" alt="Post-Silicon AI and ML Architect">
+  <img src="https://img.shields.io/badge/Selected_portfolio-7_systems-F3C969?style=flat-square&labelColor=163253" alt="Seven selected portfolio systems">
+  <img src="https://img.shields.io/badge/Public_project_repos-7-4EA5D9?style=flat-square&labelColor=163253" alt="Seven public project repositories">
+</div>
+
 ## About
 
 I am a **Senior Staff Engineer and Post-Silicon Validation AI/ML Architect** with 16+ years in semiconductor test engineering, including 6+ years leading AI/ML, GenAI, and agentic-system delivery. I architect systems that connect silicon, test, text, and engineering data to predictive models, grounded knowledge, governed agents, and human-review decisions.
@@ -46,7 +54,9 @@ These are the seven public projects with achievement stories in the v7 resume. M
 
 ## Technology
 
-Python . FastAPI . PyTorch . scikit-learn . Docker . Kafka . Spark . MLflow . Neo4j . LangChain . LangGraph . MCP
+<div>
+  <img src="https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white" alt="Python"> <img src="https://img.shields.io/badge/FastAPI-009688?style=flat-square&logo=fastapi&logoColor=white" alt="FastAPI"> <img src="https://img.shields.io/badge/PyTorch-EE4C2C?style=flat-square&logo=pytorch&logoColor=white" alt="PyTorch"> <img src="https://img.shields.io/badge/scikit--learn-F7931E?style=flat-square&logo=scikitlearn&logoColor=white" alt="scikit-learn"> <img src="https://img.shields.io/badge/Docker-2496ED?style=flat-square&logo=docker&logoColor=white" alt="Docker"> <img src="https://img.shields.io/badge/Kafka-231F20?style=flat-square&logo=apachekafka&logoColor=white" alt="Apache Kafka"> <img src="https://img.shields.io/badge/Spark-E25A1C?style=flat-square&logo=apachespark&logoColor=white" alt="Apache Spark"> <img src="https://img.shields.io/badge/MLflow-0194E2?style=flat-square&logo=mlflow&logoColor=white" alt="MLflow"> <img src="https://img.shields.io/badge/Neo4j-4581C3?style=flat-square&logo=neo4j&logoColor=white" alt="Neo4j"> <img src="https://img.shields.io/badge/LangChain-1C3C3C?style=flat-square&logo=langchain&logoColor=white" alt="LangChain"> <img src="https://img.shields.io/badge/LangGraph-17222B?style=flat-square" alt="LangGraph"> <img src="https://img.shields.io/badge/MCP-6CB4AD?style=flat-square" alt="MCP">
+</div>
 
 ## Contact
 
