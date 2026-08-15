@@ -4,11 +4,18 @@ from __future__ import annotations
 
 from pathlib import Path
 
-import matplotlib.pyplot as plt
-from matplotlib.patches import Circle, FancyArrowPatch, FancyBboxPatch, Polygon, Rectangle
+from matplotlib.patches import (
+    Circle,
+    FancyArrowPatch,
+    FancyBboxPatch,
+    Polygon,
+    Rectangle,
+)
+from render_profile_banner_options import render_lane_strip, render_option_a
 
 ROOT = Path(__file__).resolve().parents[1]
 OUTPUT = ROOT / "assets" / "profile-banner.png"
+LANE_OUTPUT = ROOT / "assets" / "selected-project-lanes.png"
 
 INK = "#13232d"
 WHITE = "#f7f8f6"
@@ -184,86 +191,10 @@ def draw_agentic_panel(axis, x_position: float, y_position: float) -> None:
 
 
 def render_banner() -> None:
-    figure, axis = plt.subplots(figsize=(16, 4.8), facecolor=INK)
-    axis.set_facecolor(INK)
-    axis.set_xlim(0, 16)
-    axis.set_ylim(0, 4.8)
-    axis.axis("off")
-
-    for x_position in range(0, 17):
-        axis.plot([x_position, x_position], [0, 4.8], color=GRID, linewidth=0.35, alpha=0.5)
-    for y_position in [0.8, 1.6, 2.4, 3.2, 4.0]:
-        axis.plot([0, 16], [y_position, y_position], color=GRID, linewidth=0.35, alpha=0.5)
-
-    axis.add_patch(Rectangle((0, 0), 0.16, 4.8, color=YELLOW))
-    axis.text(
-        0.72,
-        3.35,
-        "Rajendar Muddasani",
-        color=WHITE,
-        fontsize=36,
-        fontweight="bold",
-        family="DejaVu Serif",
-        va="center",
-    )
-    axis.text(
-        0.75,
-        2.45,
-        "AI/ML Architect for Post-Silicon Engineering",
-        color=TEAL,
-        fontsize=20,
-        fontweight="bold",
-        va="center",
-    )
-    badge_x = 0.75
-    for label, width, color in (
-        ("ML", 0.72, YELLOW),
-        ("DL", 0.72, CORAL),
-        ("GENAI", 1.08, BLUE),
-        ("AGENTIC AI", 1.55, VIOLET),
-    ):
-        axis.add_patch(Rectangle((badge_x, 1.38), width, 0.46, facecolor=color, edgecolor="none"))
-        axis.text(
-            badge_x + width / 2,
-            1.61,
-            label,
-            color=INK,
-            fontsize=9.2,
-            fontweight="bold",
-            ha="center",
-            va="center",
-        )
-        badge_x += width + 0.12
-    axis.text(
-        0.75,
-        0.82,
-        "Senior Staff Engineer  |  AI/ML Lead  |  16+ years in semiconductor test engineering",
-        color=WHITE,
-        fontsize=11,
-        va="center",
-    )
-
-    system_center = (13.53, 2.40)
-    axis.add_patch(Circle(system_center, 2.16, facecolor="#172e38", edgecolor=TEAL, linewidth=2.6))
-    axis.text(
-        system_center[0],
-        4.18,
-        "POST-SILICON AI SYSTEMS",
-        color=MINT,
-        fontsize=8.8,
-        fontweight="bold",
-        ha="center",
-        va="center",
-    )
-    draw_ml_panel(axis, 11.93, 2.43)
-    draw_dl_panel(axis, 13.62, 2.43)
-    draw_genai_panel(axis, 11.93, 0.83)
-    draw_agentic_panel(axis, 13.62, 0.83)
-
-    OUTPUT.parent.mkdir(parents=True, exist_ok=True)
-    figure.savefig(OUTPUT, dpi=160, bbox_inches="tight", pad_inches=0, facecolor=INK)
-    plt.close(figure)
+    render_option_a(OUTPUT)
+    render_lane_strip(LANE_OUTPUT)
     print(f"Wrote {OUTPUT.relative_to(ROOT)}")
+    print(f"Wrote {LANE_OUTPUT.relative_to(ROOT)}")
 
 
 if __name__ == "__main__":
