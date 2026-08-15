@@ -1,4 +1,4 @@
-"""Render two profile-banner previews from real selected-project artifacts."""
+"""Render profile banners from real selected-project artifacts."""
 
 from __future__ import annotations
 
@@ -37,14 +37,6 @@ ARTIFACTS = {
     "agentic_b": WORKSPACE_ROOT
     / "repos/08_LangGraph-Multi-Agent-Test-Failure-RCA-Platform/evidence/assets/candidate_comparison.png",
 }
-
-LANES = (
-    ("MACHINE LEARNING", YELLOW),
-    ("DEEP LEARNING", CORAL),
-    ("GENERATIVE AI", BLUE),
-    ("AGENTIC AI", VIOLET),
-)
-
 
 def font(size: int, *, serif: bool = False, bold: bool = False) -> ImageFont.FreeTypeFont:
     family = "georgiab.ttf" if serif and bold else "georgia.ttf" if serif else "seguisb.ttf" if bold else "segoeui.ttf"
@@ -112,22 +104,34 @@ def add_identity(draw: ImageDraw.ImageDraw, *, compact: bool = False) -> None:
         )
         draw.text(
             (1095, 49),
-            "Senior Staff Engineer  |  AI/ML Lead  |  16+ years",
+            "Senior Staff Engineer  .  AI/ML Lead  .  16+ years",
             fill=WHITE,
             font=font(18),
         )
         return
 
-    draw.text((70, 82), "Rajendar Muddasani", fill=WHITE, font=font(57, serif=True, bold=True))
+    draw.text((70, 62), "Rajendar Muddasani", fill=WHITE, font=font(57, serif=True, bold=True))
     draw.text(
-        (72, 174),
+        (72, 151),
         "Post-Silicon Validation AI/ML Architect",
         fill=TEAL,
         font=font(29, bold=True),
     )
     draw.text(
-        (72, 393),
-        "Senior Staff Engineer  |  AI/ML Lead  |  16+ years in semiconductor test engineering",
+        (72, 247),
+        "LangGraph  .  MCP  .  RAG  .  Knowledge Graphs  .  XGBoost  .  PyTorch  .  ResNet",
+        fill=WHITE,
+        font=font(23, bold=True),
+    )
+    draw.text(
+        (72, 291),
+        "MLflow  .  FastAPI  .  Docker  .  CI/CD  .  STDF  .  Wafer Analytics  .  ATE Automation",
+        fill=MINT,
+        font=font(21, bold=True),
+    )
+    draw.text(
+        (72, 403),
+        "Senior Staff Engineer  .  AI/ML Lead  .  16+ years in semiconductor test engineering",
         fill=WHITE,
         font=font(18),
     )
@@ -136,21 +140,6 @@ def add_identity(draw: ImageDraw.ImageDraw, *, compact: bool = False) -> None:
 def render_option_a(output: Path | None = None) -> Path:
     canvas, draw = base_canvas()
     add_identity(draw)
-
-    ribbon_left = 70
-    ribbon_top = 272
-    ribbon_width = 205
-    ribbon_gap = 8
-    for index, (label, accent) in enumerate(LANES):
-        left = ribbon_left + index * (ribbon_width + ribbon_gap)
-        draw.rectangle((left, ribbon_top, left + ribbon_width, ribbon_top + 50), fill=accent)
-        text_width = draw.textlength(label, font=font(15, bold=True))
-        draw.text(
-            (left + (ribbon_width - text_width) / 2, ribbon_top + 14),
-            label,
-            fill=INK,
-            font=font(15, bold=True),
-        )
 
     cards = (
         ((955, 35, 1260, 226), ARTIFACTS["ml_a"], "ML", "NLP RCA", YELLOW),
@@ -203,41 +192,6 @@ def render_option_b() -> Path:
         )
 
     output = OUTPUT_DIR / "profile-banner-option-b.png"
-    canvas.save(output, optimize=True)
-    return output
-
-
-def render_lane_strip(output: Path) -> Path:
-    canvas = Image.new("RGB", (1200, 88), INK)
-    draw = ImageDraw.Draw(canvas)
-    gap = 8
-    cell_width = (canvas.width - gap * 3) // 4
-    lane_counts = (
-        ("MACHINE LEARNING", "3 SELECTED SYSTEMS", YELLOW),
-        ("DEEP LEARNING", "1 SELECTED SYSTEM", CORAL),
-        ("GENERATIVE AI", "1 SELECTED SYSTEM", BLUE),
-        ("AGENTIC AI", "2 SELECTED SYSTEMS", VIOLET),
-    )
-    for index, (lane, count, accent) in enumerate(lane_counts):
-        left = index * (cell_width + gap)
-        right = canvas.width if index == 3 else left + cell_width
-        draw.rectangle((left, 0, right, canvas.height), fill=accent)
-        lane_width = draw.textlength(lane, font=font(20, bold=True))
-        count_width = draw.textlength(count, font=font(14, bold=True))
-        draw.text(
-            (left + (right - left - lane_width) / 2, 17),
-            lane,
-            fill=INK,
-            font=font(20, bold=True),
-        )
-        draw.text(
-            (left + (right - left - count_width) / 2, 51),
-            count,
-            fill=INK,
-            font=font(14, bold=True),
-        )
-
-    output.parent.mkdir(parents=True, exist_ok=True)
     canvas.save(output, optimize=True)
     return output
 
