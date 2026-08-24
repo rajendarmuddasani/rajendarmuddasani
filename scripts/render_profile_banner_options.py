@@ -124,7 +124,7 @@ def add_identity(draw: ImageDraw.ImageDraw, *, compact: bool = False) -> None:
         )
         draw.text(
             (1095, 49),
-            "Principal/Staff AI/ML Engineer  .  15+ years",
+            "Principal/Staff AI/ML Engineer  .  16+ years",
             fill=WHITE,
             font=font(18),
         )
@@ -151,7 +151,7 @@ def add_identity(draw: ImageDraw.ImageDraw, *, compact: bool = False) -> None:
     )
     draw.text(
         (72, 403),
-        "Principal/Staff AI/ML Engineer  .  15+ years in post-silicon and product engineering",
+        "Principal/Staff AI/ML Engineer  .  16+ years in post-silicon and product engineering",
         fill=WHITE,
         font=font(18),
     )

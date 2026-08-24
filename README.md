@@ -9,16 +9,14 @@
   <a href="mailto:rajendar.mi46@gmail.com"><img src="https://img.shields.io/badge/Gmail-Contact-D14836?style=flat-square&logo=gmail&logoColor=white" alt="Gmail"></a>
   <img src="https://img.shields.io/badge/Focus-Semiconductor_AI%2FML-6CB4AD?style=flat-square&labelColor=163253" alt="Semiconductor AI and ML">
   <img src="https://img.shields.io/badge/Portfolio-10_public_systems-F3C969?style=flat-square&labelColor=163253" alt="Ten public systems">
-  <img src="https://img.shields.io/badge/Method-Evidence_first-4EA5D9?style=flat-square&labelColor=163253" alt="Evidence-first engineering">
+  <img src="https://img.shields.io/badge/Leadership-Mentoring_%26_Enablement-4EA5D9?style=flat-square&labelColor=163253" alt="Mentoring and engineering enablement">
 </div>
 
 ## About
 
-I am a **Principal-level AI/ML engineer and semiconductor domain expert** with **15+ years of post-silicon validation experience**, including **7+ years architecting AI/ML systems** for yield improvement, test-time optimisation, wafer analytics, reliability risk screening, root-cause analysis, and engineering automation.
+I am a **Principal-level AI/ML engineer and semiconductor domain expert** with **16+ years of post-silicon validation and product-engineering experience**. My work focuses on structured ML, wafer and yield analytics, test-time optimisation, root-cause analysis, and engineering automation.
 
-I work across the complete lifecycle: high-volume test and wafer data ingestion, feature engineering, structured ML, deep learning, LLM adaptation, agentic workflows, evaluation, MLOps, CI/CD, model serving, drift monitoring, and human-review integration. I also design learning paths and mentor engineers building data-driven semiconductor workflows.
-
-This is an **evidence-first public portfolio**. Each repository documents its data provenance, evaluation protocol, reproducibility path, limitations, and decision boundaries. Confidential code, data, identifiers, and integration details are not published.
+I build practical predictive and agentic solutions with strong attention to data quality, evaluation, safety controls, and engineering decision-making. I also mentor engineers and interns, design structured learning paths and hands-on modules, and help domain experts apply Python, ML, GenAI, and MLOps to day-to-day engineering problems.
 
 ## Ten public AI/ML systems
 
@@ -46,7 +44,7 @@ This is an **evidence-first public portfolio**. Each repository documents its da
 **Semiconductor product engineering**
 
 <div>
-  <img src="https://img.shields.io/badge/Post--Silicon_Validation-163253?style=flat-square" alt="Post-Silicon Validation"> <img src="https://img.shields.io/badge/ATE_Test_Development-294B63?style=flat-square" alt="ATE Test Development"> <img src="https://img.shields.io/badge/STDF-6CB4AD?style=flat-square" alt="STDF"> <img src="https://img.shields.io/badge/Wafer_Analytics-4EA5D9?style=flat-square" alt="Wafer Analytics"> <img src="https://img.shields.io/badge/Yield_Analysis-3B8D5A?style=flat-square" alt="Yield Analysis"> <img src="https://img.shields.io/badge/Test--Time_Optimisation-F3C969?style=flat-square&labelColor=163253" alt="Test-Time Optimisation"> <img src="https://img.shields.io/badge/Reliability_Screening-E56B46?style=flat-square" alt="Reliability Screening"> <img src="https://img.shields.io/badge/GR%26R-9B8AFB?style=flat-square" alt="GR and R">
+  <img src="https://img.shields.io/badge/Post--Silicon_Validation-163253?style=flat-square" alt="Post-Silicon Validation"> <img src="https://img.shields.io/badge/ATE_Test_Development-294B63?style=flat-square" alt="ATE Test Development"> <img src="https://img.shields.io/badge/STDF-6CB4AD?style=flat-square" alt="STDF"> <img src="https://img.shields.io/badge/Wafer_Maps-4EA5D9?style=flat-square" alt="Wafer Maps"> <img src="https://img.shields.io/badge/Yield_Analysis-3B8D5A?style=flat-square" alt="Yield Analysis"> <img src="https://img.shields.io/badge/Test--Time_Optimisation-F3C969?style=flat-square&labelColor=163253" alt="Test-Time Optimisation"> <img src="https://img.shields.io/badge/Reliability_Screening-E56B46?style=flat-square" alt="Reliability Screening"> <img src="https://img.shields.io/badge/GR%26R-9B8AFB?style=flat-square" alt="GR and R">
 </div>
 
 **Deep learning, LLMs, and unstructured data**
@@ -58,7 +56,7 @@ This is an **evidence-first public portfolio**. Each repository documents its da
 **Agentic AI and workflow automation**
 
 <div>
-  <img src="https://img.shields.io/badge/LangGraph-17222B?style=flat-square" alt="LangGraph"> <img src="https://img.shields.io/badge/LangChain-1C3C3C?style=flat-square&logo=langchain&logoColor=white" alt="LangChain"> <img src="https://img.shields.io/badge/MCP-6CB4AD?style=flat-square" alt="MCP"> <img src="https://img.shields.io/badge/Neo4j-4581C3?style=flat-square&logo=neo4j&logoColor=white" alt="Neo4j"> <img src="https://img.shields.io/badge/ChromaDB-E56B46?style=flat-square" alt="ChromaDB"> <img src="https://img.shields.io/badge/Knowledge_Graphs-9B8AFB?style=flat-square" alt="Knowledge Graphs"> <img src="https://img.shields.io/badge/Human_Review-F3C969?style=flat-square&labelColor=163253" alt="Human Review">
+  <img src="https://img.shields.io/badge/LangGraph-17222B?style=flat-square" alt="LangGraph"> <img src="https://img.shields.io/badge/LangChain-1C3C3C?style=flat-square&logo=langchain&logoColor=white" alt="LangChain"> <img src="https://img.shields.io/badge/MCP-6CB4AD?style=flat-square" alt="MCP"> <img src="https://img.shields.io/badge/Neo4j-4581C3?style=flat-square&logo=neo4j&logoColor=white" alt="Neo4j"> <img src="https://img.shields.io/badge/ChromaDB-E56B46?style=flat-square" alt="ChromaDB"> <img src="https://img.shields.io/badge/Knowledge_Graphs-9B8AFB?style=flat-square" alt="Knowledge Graphs"> <img src="https://img.shields.io/badge/AI_Agents-F3C969?style=flat-square&labelColor=163253" alt="AI Agents">
 </div>
 
 **MLOps, inference, and data platforms**
