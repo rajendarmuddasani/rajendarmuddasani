@@ -93,6 +93,26 @@ def add_artifact_card(
     draw.rectangle(box, outline=accent, width=3)
 
 
+def add_focus_card(
+    draw: ImageDraw.ImageDraw,
+    *,
+    box: tuple[int, int, int, int],
+    lane: str,
+    title: str,
+    lines: tuple[str, str],
+    accent: str,
+    soft_fill: str,
+) -> None:
+    left, top, right, bottom = box
+    draw.rounded_rectangle(box, radius=9, fill=soft_fill, outline=accent, width=3)
+    draw.rectangle((left, top, right, top + 39), fill=accent)
+    draw.text((left + 13, top + 7), lane, fill=INK, font=font(17, bold=True))
+    draw.text((left + 16, top + 57), title, fill=INK, font=font(24, bold=True))
+    draw.line((left + 16, top + 95, right - 16, top + 95), fill=accent, width=2)
+    draw.text((left + 16, top + 112), lines[0], fill=INK, font=font(17))
+    draw.text((left + 16, top + 143), lines[1], fill=INK, font=font(17))
+
+
 def add_identity(draw: ImageDraw.ImageDraw, *, compact: bool = False) -> None:
     if compact:
         draw.text((62, 30), "Rajendar Muddasani", fill=WHITE, font=font(50, serif=True, bold=True))
@@ -104,7 +124,7 @@ def add_identity(draw: ImageDraw.ImageDraw, *, compact: bool = False) -> None:
         )
         draw.text(
             (1095, 49),
-            "Senior Staff Engineer  .  AI/ML Lead  .  16+ years",
+            "Principal/Staff AI/ML Engineer  .  15+ years",
             fill=WHITE,
             font=font(18),
         )
@@ -119,19 +139,19 @@ def add_identity(draw: ImageDraw.ImageDraw, *, compact: bool = False) -> None:
     )
     draw.text(
         (72, 247),
-        "LangGraph  .  MCP  .  RAG  .  Knowledge Graphs  .  XGBoost  .  PyTorch  .  ResNet",
+        "Structured ML  .  Yield Prediction  .  Test-Time Optimisation  .  Wafer Analytics  .  NLP",
         fill=WHITE,
-        font=font(23, bold=True),
+        font=font(21, bold=True),
     )
     draw.text(
         (72, 291),
-        "MLflow  .  FastAPI  .  Docker  .  CI/CD  .  STDF  .  Wafer Analytics  .  ATE Automation",
+        "Agentic AI  .  RAG  .  Knowledge Graphs  .  MLOps  .  STDF  .  ATE Automation",
         fill=MINT,
         font=font(21, bold=True),
     )
     draw.text(
         (72, 403),
-        "Senior Staff Engineer  .  AI/ML Lead  .  16+ years in semiconductor test engineering",
+        "Principal/Staff AI/ML Engineer  .  15+ years in post-silicon and product engineering",
         fill=WHITE,
         font=font(18),
     )
@@ -142,20 +162,20 @@ def render_option_a(output: Path | None = None) -> Path:
     add_identity(draw)
 
     cards = (
-        ((955, 35, 1260, 226), ARTIFACTS["ml_a"], "ML", "NLP RCA", YELLOW),
-        ((1274, 35, 1579, 226), ARTIFACTS["dl"], "DL", "RESNET WAFER", CORAL),
-        ((955, 242, 1260, 445), ARTIFACTS["genai"], "GENAI", "GRAPH MCP", BLUE),
-        ((1274, 242, 1579, 445), ARTIFACTS["agentic_a"], "AGENTIC AI", "AARCAR", VIOLET),
+        ((955, 35, 1260, 226), "STRUCTURED ML", "Predictive Analytics", ("Yield  .  test time", "Anomaly  .  NLP"), YELLOW, "#fff1bd"),
+        ((1274, 35, 1579, 226), "DEEP LEARNING", "Wafer Intelligence", ("ResNet  .  transfer learning", "STDF  .  ONNX"), CORAL, "#ffe0d7"),
+        ((955, 242, 1260, 445), "GENAI + RAG", "Domain Knowledge", ("Fine-tuning  .  retrieval", "Graph-grounded generation"), BLUE, "#dceffc"),
+        ((1274, 242, 1579, 445), "AGENTIC AI", "Engineering Workflows", ("MCP  .  knowledge graphs", "RCA  .  human review"), VIOLET, "#e5e0ff"),
     )
-    for box, path, lane, project, accent in cards:
-        add_artifact_card(
-            canvas,
+    for box, lane, title, lines, accent, soft_fill in cards:
+        add_focus_card(
             draw,
             box=box,
-            path=path,
             lane=lane,
-            project=project,
+            title=title,
+            lines=lines,
             accent=accent,
+            soft_fill=soft_fill,
         )
 
     output = output or OUTPUT_DIR / "profile-banner-option-a.png"
