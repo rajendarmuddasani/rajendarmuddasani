@@ -8,7 +8,7 @@
   <a href="https://www.linkedin.com/in/rajendar-muddasani-8a177620"><img src="https://img.shields.io/badge/LinkedIn-Connect-0A66C2?style=flat-square&logo=linkedin&logoColor=white" alt="LinkedIn"></a>
   <a href="mailto:rajendar.mi46@gmail.com"><img src="https://img.shields.io/badge/Gmail-Contact-D14836?style=flat-square&logo=gmail&logoColor=white" alt="Gmail"></a>
   <img src="https://img.shields.io/badge/Focus-Semiconductor_AI%2FML-6CB4AD?style=flat-square&labelColor=163253" alt="Semiconductor AI and ML">
-  <img src="https://img.shields.io/badge/Portfolio-10_public_systems-F3C969?style=flat-square&labelColor=163253" alt="Ten public systems">
+  <img src="https://img.shields.io/badge/Portfolio-3_public_resume_projects-F3C969?style=flat-square&labelColor=163253" alt="Three public resume projects">
   <img src="https://img.shields.io/badge/Leadership-Mentoring_%26_Enablement-4EA5D9?style=flat-square&labelColor=163253" alt="Mentoring and engineering enablement">
 </div>
 
@@ -18,20 +18,13 @@ I am a **Principal-level AI/ML engineer and semiconductor domain expert** with *
 
 I build practical predictive and agentic solutions with strong attention to data quality, evaluation, safety controls, and engineering decision-making. I also mentor engineers and interns, design structured learning paths and hands-on modules, and help domain experts apply Python, ML, GenAI, and MLOps to day-to-day engineering problems.
 
-## Ten public AI/ML systems
+## Three public resume projects
 
 | # | Project | What it does | Core implementation |
 |---:|---|---|---|
-| **01** | [**Virtual Characterization and Qualification**](https://github.com/rajendarmuddasani/01-virtual-characterization-and-qualification) | Unifies production, characterization, and qualification conditions into a correlation-ready foundation for experiment prioritisation. | DOE concepts, response surfaces, grouped validation, uncertainty-aware review, reproducible data contracts. |
-| **02** | [**Graph-Grounded GenAI Test Generation**](https://github.com/rajendarmuddasani/02-graph-grounded-genai-test-generation) | Converts natural-language test intent into grounded, validated, compilable Java test methods. | Neo4j, MCP tools, LLM agents, Tree-sitter validation, source grounding, compile gates. |
-| **03** | [**AARCAR Root-Cause Analysis**](https://github.com/rajendarmuddasani/03-aarcar-root-cause-analysis) | Produces evidence-grounded semiconductor root-cause reports with review-aware agent orchestration. | LangGraph, Neo4j, ChromaDB, retrieval, citations, conflict handling, human review. |
-| **04** | [**ResNet STDF Wafer Defect Classifier**](https://github.com/rajendarmuddasani/04-resnet-stdf-wafer-defect-classifier) | Converts STDF-derived wafer information into defect-pattern intelligence and served predictions. | STDF v4, wafer-map generation, ResNet-18, transfer learning, ONNX, FastAPI. |
-| **05** | [**Chip Screening and Test-Time Optimisation**](https://github.com/rajendarmuddasani/05-chip-screening-and-test-time-optimization) | Screens chip risk to support safety-gated selective bypass of optional test stages. | Neural classifier, VAE anomaly detector, statistical guardrails, policy validation, runtime API. |
-| **06** | [**Domain-Specific LLM Fine-Tuning and RAG**](https://github.com/rajendarmuddasani/06-domain-specific-llm-finetuning-and-rag) | Adapts a base LLM to domain language and grounds question answering in retrieved technical context. | Llama, LoRA/QLoRA, DPO, embeddings, hybrid retrieval, grounded evaluation. |
-| **07** | [**DRAM Yield Prediction MLOps**](https://github.com/rajendarmuddasani/07-dram-yield-prediction-mlops) | Ranks rare DRAM defect risk and demonstrates an end-to-end model lifecycle. | HybridTransformerCNN, focal loss, drift detection, retraining, canary promotion, rollback. |
-| **08** | [**RL Test-Flow Optimisation**](https://github.com/rajendarmuddasani/08-rl-test-flow-optimization) | Compares test-sequence policies under coverage, time, cost, and safety constraints. | Gymnasium, DQN/PPO, Bayesian policy, curriculum learning, promotion gates. |
-| **09** | [**NLP ML Root-Cause Predictor**](https://github.com/rajendarmuddasani/09-nlp-ml-root-cause-predictor) | Classifies technical failure descriptions into root-cause categories with confidence and explanations. | TF-IDF, SVM/ensembles, SHAP, threshold policy, Streamlit, GPT-assisted explanation. |
-| **10** | [**Wafer Yield Intelligence**](https://github.com/rajendarmuddasani/10-wafer-yield-intelligence) | Supports lot and wafer review through spatial pattern recognition and retest prediction. | Four-stage ETL, Oracle SQL, spatial features, classical ML, prediction CLI. |
+| **01** | [**NLP FA Failure Classifier**](https://github.com/rajendarmuddasani/nlp-fa-failure-classifier) | Classifies failure-analysis descriptions into actionable categories with auditable confidence routing. | TF-IDF, held-out evaluation, cross-validation, explainable triage. |
+| **02** | [**Graph-Grounded GenAI Test Generation**](https://github.com/rajendarmuddasani/02-graph-grounded-genai-test-generation) | Converts natural-language test intent into grounded, validated, compilable Java test methods. | Neo4j, MCP tools, LLM agents, Tree-sitter validation, compile gates. |
+| **03** | [**AARCAR Root-Cause Analysis**](https://github.com/rajendarmuddasani/03-aarcar-root-cause-analysis) | Produces evidence-grounded semiconductor root-cause reports with review-aware agent orchestration. | LangGraph, Neo4j, ChromaDB, retrieval, citations, human review. |
 
 ## Top skills
 
